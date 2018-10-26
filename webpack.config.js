@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './index.js', //entry point is in the root of the project folder
+  entry: './public/index.js', //entry point is in the root of the project folder
   mode: 'development',
   output: {
     path: __dirname, //bundle.js is in the root of the project folder
