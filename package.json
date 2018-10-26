@@ -1,0 +1,28 @@
+{
+  "name": "boilermaker",
+  "version": "1.0.0",
+  "description": "boilerplate setup",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "start-dev": "webpack -w & nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bethany Walker",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.1.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-router-dom": "^4.3.1"
+  }
+}
