@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server",
-    "start-dev": "webpack -w & nodemon server/app.js",
+    "start-dev": "webpack -w & nodemon server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Bethany Walker",
@@ -16,17 +16,27 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "style-loader": "^0.23.1",
     "webpack": "^4.23.1",
     "webpack-cli": "^3.1.2"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-session-sequelize": "^5.2.2",
     "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "pg": "^7.6.0",
+    "pg-hstore": "^2.3.2",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-redux": "^5.1.0",
     "react-router-dom": "^4.3.1",
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "sequelize": "^4.41.0"
   }
 }

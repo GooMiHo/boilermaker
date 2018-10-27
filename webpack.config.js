@@ -1,20 +1,26 @@
 module.exports = {
-  entry: './public/index.js', //entry point is in the root of the project folder
+  entry: './client/index.js',
   mode: 'development',
   output: {
-    path: __dirname, //bundle.js is in the root of the project folder
-    filename: 'bundle.js'
+    path: __dirname,
+    filename: './public/bundle.js'
   },
   devtool: 'source-maps',
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader'
-        }
+        test: /\.jsx?$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel-loader'
+      },
+      // use the style-loader/css-loader combos for anything matching the .css extension
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader',
+        ]
       }
     ]
   }
-}
+};
